@@ -1,0 +1,7 @@
+body {
+  background: repeating-linear-gradient(#ffbcfa, #d0f2ed);
+  font-family: "Poppins", sans-serif;
+  color: #00618e;
+  position: relative;
+  margin-left: 25%
+}
