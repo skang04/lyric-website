@@ -28,7 +28,7 @@ Drop[] drops = new Drop[500];
 PImage img;
 
 void setup() {
-  img = loadImage("background.png");
+  img = loadImage("background.jpg");
   img.resize(width, height);
   size(600,590);
   for (int i = 0; i < drops.length; i++) {
