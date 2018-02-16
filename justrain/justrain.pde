@@ -33,8 +33,7 @@ void setup() {
 }
 
 void draw() {
-  background(0,0,0,0); 
-  //background(loadImage("background.png"));
+  background(loadImage("background.jpg"));
   for (int i = 0; i < drops.length; i++) {
     drops[i].fall();
     drops[i].show();
