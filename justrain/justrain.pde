@@ -1,6 +1,6 @@
 class Drop {
   float x = random(width);
-  float y = random(-900,-30);
+  float y = random(-500,-50);
   float z = random(0, 20);
   float len = map(z, 0, 20, 10, 20);
   float yspeed = map(z, 0, 20, 4 ,10);
@@ -8,7 +8,7 @@ class Drop {
   void fall() {
     y = y + yspeed;
     float grav = map(z, 0, 20, 0, 0.2);
-    yspeed = yspeed + 0.8;
+    yspeed = yspeed + 0.2;
     
     if (y > height) {
       y = random (-200,-100);
@@ -26,7 +26,7 @@ class Drop {
 Drop[] drops = new Drop[500];
 
 void setup() {
-  size(921,906);
+  size(600,590);
   for (int i = 0; i < drops.length; i++) {
     drops[i] = new Drop();
   }
