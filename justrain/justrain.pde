@@ -25,7 +25,11 @@ class Drop {
 }
 Drop[] drops = new Drop[500];
 
+PImage img;
+
 void setup() {
+  img = loadImage("background.jpg");
+  img.resize(width, height);
   size(600,590);
   for (int i = 0; i < drops.length; i++) {
     drops[i] = new Drop();
@@ -33,7 +37,7 @@ void setup() {
 }
 
 void draw() {
-  background(loadImage("background.jpg"));
+  background(img);
   for (int i = 0; i < drops.length; i++) {
     drops[i].fall();
     drops[i].show();
