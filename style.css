@@ -56,10 +56,15 @@ h1 a:hover {
 }
 
 .dua {
-  font-size: 120px;
-  font-weight: 900;
+  display:block;
+  margin: 200px 0 200px 0;
+  font-size: 80px;
+  font-weight: 700;
   font-style:italic;
-  margin: 30px 0px 400px 0px;
+  text-shadow: -10px 10px 0px #2cb2e0,
+                -20px 20px 0px #32c1f2,
+                -30px 30px 0px #60d6ff,
+                -40px 40px 0px #60d6ff;
 }
 
 .big-numbers {
