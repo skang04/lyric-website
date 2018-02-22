@@ -70,17 +70,17 @@ h1 a:hover {
   margin-bottom:400px;
 }
 
-/* .newrules img {
+.newrules img {
   width: 100%;
   height: auto;
-  cursor: url('angry.png'), pointer; */
+  cursor: url('angry.png'), pointer; 
 
 }
 
-/* .newrules {
+.newrules {
   margin:50px auto 200px auto;
   width: 50%;
-} */
+}
 
 .pushing {
   display: block;
