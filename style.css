@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#ffbcfa, #d0f2ed);
+  background-image: url("confetti-01.png"), linear-gradient(#ffbcfa, #d0f2ed);
   font-family: "Poppins", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
@@ -70,6 +70,9 @@ h1 a:hover {
 .big-numbers {
   font-size: 120px;
   font-weight: 900;
+  text-shadow: 0px;
+  text-decoration:line-through;
+  color:#f2ff00;
   font-style:italic;
 }
 
@@ -105,12 +108,20 @@ h1 a:hover {
   font-size: 80px;
   font-weight: 700;
   font-style:italic;
-  text-shadow: -10px 10px 0px #2cb2e0,
-                -20px 20px 0px #32c1f2,
-                -30px 30px 0px #60d6ff,
-                -40px 40px 0px #60d6ff;
-
+  text-shadow: 0px 0px 0px #2cb2e0,
+                  0px 0px 0px #32c1f2,
+                  0px 0px 0px #60d6ff,
+                  0px 0px 0px #60d6ff;
+  transition: 800ms;
 }
+
+.love:hover {
+  text-shadow: -10px 10px 0px #2cb2e0,
+                  -20px 20px 0px #32c1f2,
+                  -30px 30px 0px #60d6ff,
+                  -40px 40px 0px #60d6ff;
+}
+
 
 .practice {
   margin: 400px 0 0 0;
@@ -119,4 +130,38 @@ h1 a:hover {
 canvas {
   width: 100%;
   height: 100%;
+}
+
+
+@keyframes drift {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+
+  }
+
+  to {
+    transform: translateY(0px);
+
+    opacity: 1;
+  }
+}
+
+.animate{
+  margin: 0 0 1000px 0;
+  font-family: inherit;
+  font-weight: 900;
+  text-align: center;
+  font-size: 100px;
+  color: #f2ff00;
+  /* opacity: .9; */
+  animation-name: drift;
+  animation-duration: .04s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: .03s;
+  animation-direction: alternate;
+  right:15vw;
+  top:15vh;
+  animation-delay: -2500ms;
 }
