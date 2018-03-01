@@ -229,3 +229,47 @@ canvas {
   top:15vh;
   animation-delay: -2500ms;
 }
+
+@keyframes drift {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+
+  }
+
+  to {
+    transform: translateY(-100px);
+    opacity: .7;
+  }
+}
+
+h1:before, h1:after {
+  position: sticky;
+  font-family: Museo Slab;
+  text-align: left;
+  mix-blend-mode: overlay;
+  color: white;
+  font-size: 25rem;
+  opacity: .9;
+  animation-name: drift;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: -10s;
+  animation-direction: alternate;
+
+}
+
+h1:before {
+  content: "ONE";
+  right:15vw;
+  top:15vh;
+  /animation-delay: -2500ms;/
+}
+
+h1::after {
+  content: "ONE";
+  right:8vw;
+  top:35vh;
+  /animation-delay: -2500ms;/
+}
