@@ -68,7 +68,7 @@ h1 a:hover {
 }
 
 .talking {
-  font-family: 'Merriweather', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 100px;
@@ -83,7 +83,7 @@ h1 a:hover {
   text-decoration: none;
   color:#f2ff00;
   border-bottom: 1px solid transparent;
-  transition: 50ms;
+  transition: 500ms;
 
 }
 
