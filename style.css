@@ -31,7 +31,7 @@ h5 {
 }
 
 h6 {
-  font-size: 45px;
+  font-size: 65px;
   font-style:;
 }
 
@@ -68,8 +68,10 @@ h1 a:hover {
 }
 
 .talking {
-  font-family: Merriweather;
-  font-weight: 700 italic;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
 
 }
 
@@ -77,14 +79,26 @@ h1 a:hover {
   font-size: 120px;
   font-weight: 900;
   text-shadow: 0px;
-  text-decoration:line-through;
-  color:#f2ff00;
   font-style:italic;
+  text-decoration: none;
+  color:#f2ff00;
+  border-bottom: 1px solid transparent;
+  transition: .5s;
+
+}
+
+.big-numbers:hover {
+    text-decoration:line-through;
+    text-shadow: 4px 5px 10px red;
+
 }
 
 .smallnumbers {
   font-size:25px;
+  display: block;
+  margin: 350px 150px 350px 0px;
   text-transform:lowercase;
+  text-align: right;
 }
 
 .rules {
