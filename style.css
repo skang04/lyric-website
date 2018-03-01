@@ -105,6 +105,50 @@ h1 a:hover {
   margin-bottom:400px;
 }
 
+@keyframes first {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+
+  }
+
+  to {
+    transform: translateY(0px);
+
+    opacity: 1;
+}
+}
+
+.one {
+  margin: 0 0 1000px 0;
+  font-family: inherit;
+  font-weight: 900;
+  text-align: left;
+  font-size: 100px;
+  color: white;
+  mix-blend-mode: overlay;
+  animation-name: first;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 13s;
+  animation-direction: alternate;
+  animation-delay: -3000ms;
+}
+
+
+.one:before {
+  right:15vw;
+  top:15vh;
+  /animation-delay: -2500ms;/
+}
+
+.one:after {;
+  right:8vw;
+  top:35vh;
+  /animation-delay: -2500ms;/
+}
+
 .newrules img {
   width: 100%;
   height: auto;
